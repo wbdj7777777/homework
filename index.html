@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .logo{
+            width: 150px;
+            height: 50px;
+        }
+        li{
+            display: inline;
+        }
+        .banner-left{
+            width: 300px;
+            height: 25px;   
+        }
+        .banner-right{
+            margin: 0 10px;
+        }
+        .search{
+            width: 336.86px;
+            height: 25px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top{
+            background-color: black;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner-left,.banner-mid,.banner-right{
+            color: white;
+            font-size: 120%;
+        }
+        li>a{
+            text-decoration: none;
+            color: white;
+        }
+        h2>a{
+            color: rgb(184, 158, 45);
+            text-decoration: none;
+        }
+        .lyric{
+            font-size: 70%;
+            width: 600px;
+            height: 500px;
+            margin: 100px 50px;
+        }
+        hr{
+            color: gray;
+        }
+        .lyric>p{
+            font-size: 150%;
+        }
+        .album{
+            margin: 50px;
+            width: 180px;
+            height: 180px;
+        }
+        #album{
+            border-radius: 50%;
+        }
+        .mid{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+        }
+        .play{
+            width: 40px;
+            height: 40px;
+            background:url(img/all0.jpg);
+        }
+        #mute{
+            width: 20px;
+            height: 20px;
+            background: url(img/all0.jpg);
+            position: relative;
+            top: 290px;
+            left: -350px;
+        }
+        #process{
+            width: 10px;
+            height: 10px;
+            position: relative;
+            top: -4px;
+            left: 5px;
+        }
+        #process0{
+            width: 130px;
+            height: 10px;
+        }
+        #play0{
+            margin: 50px 50px;
+            width: 200px;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+            top: 200px;
+            left: -280px;
+        }
+        #download{
+            background: url(img/all0.jpg);
+            width: 200px;
+            height: 45px;
+            position: relative;
+            top:-320px;
+            left: 1070px;
+            display: flex;
+            text-decoration: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #logo0{
+            background: url(img/all0.jpg);
+            width: 19px;
+            height: 15px;
+        }
+        .download0{
+            width: 100px;
+        }
+        @-webkit-keyframes animal {
+            0%{
+                transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+                -ms-transform: rotate(-360deg);
+            -webkit-transform: rotate(-360deg);
+            }
+        }
+        #album {
+            -webkit-animation: animal 10s infinite linear ;
+            -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+            transform-origin: center center;
+        }
+        #bottom{
+            display: flex;
+            justify-content: center;
+            height: 200px;
+        }
+        #review0{
+            display: flex;
+            flex-direction: row;
+        }
+        #review4{
+            display: flex;
+            flex-direction: row;
+        }
+        #review3{
+            width: 800px;
+            height: 100px;
+        }
+        button{
+            width: 50px;
+            height: 30px;
+            background-color: coral;
+            color: white;
+            position: relative;
+            top: 150px;
+            left: -50px;
+        }
+        .review2{
+            width: 800px;
+            height: 1px;
+            margin: auto;
+        }
+        #review8{
+            width: 800px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        #review9{
+            width: 800px;
+            height: 20px;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="img/1.jpg" alt="">
+        </div>
+        <div class="banner-left">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">榜单</a></li>
+                <li><a href="">歌手</a></li>
+                <li><a href="">下载酷我客户端</a></li>
+            </ul>
+        </div>
+        <div class="banner-mid">
+            <ul>
+                <li><a href=""><canvas id="canvas0" width="17" height="17"></canvas>美女秀</a></li>
+                <li><a href=""><canvas id="canvas1" width="17" height="17"></canvas>酷我耳机</a></li>
+                <li><a href=""><canvas id="canvas2" width="17" height="17"></canvas>VIP会员</a></li>
+                <li><a href=""><canvas id="canvas3" width="17" height="17"></canvas>i听</a></li>
+            </ul>
+        </div>
+        <div class="banner-right">
+            <ul>
+                <li><a href="">更多服务</a></li>
+                <li><a href="">登录</a></li>
+            </ul>            
+        </div>
+        <div class="search">
+            <img src="img/2.jpg" alt="">
+        </div>
+    </div>
+    <div class="mid">
+    <div class="lyric">
+        <h1>喜羊羊</h1>
+        <h2>专辑：<a href="">儿歌大全</a>歌手：<a href="">华语群星</a><a href="">分享</a><img src="img/4.jpg"><a href="">评论</a></h2>
+        <h2>上传时间：2015-10-02 歌曲来源：民大相思湖网球社</h2>
+        <hr>
+        <p>在所有天气拥有叫人大笑的力量</p>
+        <br>
+        <p>虽然我只是羊</p>
+        <br>
+        <p>虽然我只是羊</p>
+        <br>
+        <p>喜羊羊美羊羊懒羊羊沸羊羊</p>
+        <br>
+        <p>慢羊羊软绵绵红太狼灰太狼</p>
+    </div>
+    <div class="album">
+        <img id="album" src="img/3.jpg" alt="">
+    </div>
+    <div id="play0">
+        <div class="play" id="play">
+            <audio autoplay="autoplay" id="mymusic">
+                <source src="img/喜羊羊与灰太狼主题曲.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    <div id="process"><canvas id="canvas4" ></canvas></div>
+    <div id="process0"><hr></div>
+    </div>
+    <div id="mute"></div>
+    </div>
+    <div id="download">
+        <div id="logo0"></div>
+        <div id="download0"><p>免费下载这首歌</p></div>
+    </div>
+    <div id="bottom">
+        <div class="review">
+            <div id="review0"><h1>评论</h1><p><p>0</p>条评论</p></div>
+            <div id="review4"><div><img src="img/5.jpg"></div>
+            <div id=><input id="review3"></div>
+        </div>
+        
+        </div>
+        <div><button id="review6">评论</button></div>
+    </div>
+    <div class="review2"><hr></div>
+    <div id="review7"></div>
+
+</body>
+<script>
+    window.onload = function () {
+        var canvas0 = document.getElementById("canvas0");
+        var context = canvas0.getContext("2d");
+        var img = new Image();
+        img.src = "img/all.jpg";
+        img.onload = function() {
+            context.drawImage(img, 230, 26, 500, 500, 0, 0, 500, 500);
+        }
+    }
+        var canvas1 = document.getElementById("canvas1");
+        var context1 = canvas1.getContext("2d");
+        var img = new Image();
+        img.src = "img/all.jpg";
+        img.onload = function() {
+            context1.drawImage(img, 230, 26, 500, 500, 0, 0, 500, 500);
+        }        
+        var canvas2 = document.getElementById("canvas2");
+        var context2 = canvas2.getContext("2d");
+        var img = new Image();
+        img.src = "img/all.jpg";
+        img.onload = function() {
+            context2.drawImage(img, 230, 26, 500, 500, 0, 0, 500, 500);
+        }        
+        var canvas3 = document.getElementById("canvas3");
+        var context3 = canvas3.getContext("2d");
+        var img = new Image();
+        img.src = "img/all.jpg";
+        img.onload = function() {
+            context3.drawImage(img, 230, 26, 500, 500, 0, 0, 500, 500);
+        }
+        var mymusic=document.getElementById('mymusic');
+        var play=document.getElementById("play");
+        var album=document.getElementById("album");
+        play.style.backgroundPosition="-162px -88px";
+        play.onclick=function(){
+            if(mymusic.paused==true){
+                mymusic.play();
+                play.style.backgroundPosition="-207px -135px";
+            }
+            else{
+                mymusic.pause();
+                play.style.backgroundPosition="-162px -88px";
+            }
+        }
+        var mute=document.getElementById('mute');
+        mute.style.backgroundPosition="-40px 0";
+        mute.onclick=function(){
+            if(mymusic.muted==false){
+                mymusic.muted=true;
+            }
+            else{
+                mymusic.muted=false;
+            }
+        }
+        window.onload = function () {
+        var canvas4 = document.getElementById("canvas4");
+        var context = canvas4.getContext("2d");
+        var img = new Image();
+        img.src = "img/all0.jpg";
+        img.onload = function() {
+            context.drawImage(img, 95, 0, 10, 10, 0, 0, 10, 10);
+        }
+        var download=document.getElementById("download");
+        download.style.backgroundPosition="0 -43px";
+    }
+        var review7=document.getElementById("review7");
+        var review3=document.getElementById("review3");
+        var review6=document.getElementById("review6");
+        var data=localStorage['data'];
+        if(data==null||data==""){
+            data='[]';
+        }
+        data=JSON.parse(data);
+        review6.onclick=function(){
+        var obj={
+            review3:review3.value
+        }
+        data.push(obj);
+        data=JSON.stringify(data);
+        localStorage['data']=data;
+        var data0=localStorage['data0'];
+        data0=JSON.parse(data);
+        var review8=document.createElement("div");
+        review7.appendChild(review8);
+        var date=new Date();
+        var year=date.getFullYear();
+        var month=date.getMonth();
+        var de=date.getDate();
+        var hours=date.getHours();
+        var minutes=date.getMinutes();
+        var seconds=date.getSeconds();
+        var time=year+'-'+month+'-'+de+'-'+hours+':'+minutes+':'+seconds;
+        review8.innerHTML="<div id='review8'>"+document.getElementById("review3").value+"</div><br><div id='review9'>"+time+"</div>";
+    }
+    </script>
+</html>
